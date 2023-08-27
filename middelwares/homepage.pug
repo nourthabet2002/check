@@ -1,0 +1,18 @@
+app.set('view engine', 'pug');
+app.set('views','./views');
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="styles.css")
+    title Home Page
+  body
+    nav
+      a(href="homepage.pug") Home
+      a(href="our sevices.pug") Our Services
+      a(href="contact us.pug") Contact Us
+    h1 Welcome to our Home Page
+    app.get('/first_template', function(req, res){
+   res.render('first_view');
+});
