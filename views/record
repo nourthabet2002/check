@@ -1,0 +1,35 @@
+person.save(function(err, data) {
+let namelModel = require('./name')
+let msg = new nameModel({
+  name: 'nour'
+})
+msg.save()
+   .then(doc => {
+     console.log(doc)
+   })
+   .catch(err => {
+     console.error(err)
+   })
+   let namelModel = require('./age')
+let msg = new ageModel({
+  name: '21'
+})
+msg.save()
+   .then(doc => {
+     console.log(doc)
+   })
+   .catch(err => {
+     console.error(err)
+   })
+   let favouritefoodsModel = require('./favouritefoods')
+let msg = new favouritefoodsModel({
+  name: 'nour'
+})
+msg.save()
+   .then(doc => {
+     console.log(doc)
+   })
+   .catch(err => {
+     console.error(err)
+   })
+});
